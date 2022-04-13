@@ -1,0 +1,41 @@
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:2rem 6rem ;
+    
+}
+.brand img{
+    padding: 0 .5rem;
+    margin: 4rem 0;
+}
+.wrapper{
+    position: relative;
+}
+.vector{
+    position: absolute;
+    top: -150px;
+    z-index: -1;
+}
+.vector img{
+    width: 80%;
+}
+@media screen  and (max-width:968px){
+    .brand{
+        margin:2rem 3rem ;
+    }
+    .brand img{
+        padding: 0rem;
+        width: 70px;
+    }
+}
+
+@media screen  and (max-width:500px){
+    .brand{
+        margin:0rem 2rem ;
+    }
+    .brand img{
+        padding: 0rem;
+        width: 50px;
+    }
+}

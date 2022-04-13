@@ -1,0 +1,135 @@
+.service {
+	width: 800px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.render {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 3rem;
+}
+.title {
+	margin-bottom: 3rem;
+}
+.title h6 {
+	font-family: var(--p-font);
+	font-size: 18px;
+	line-height: 21px;
+	color: #514040;
+	margin-bottom: 1rem;
+}
+.title h1 {
+	font-family: var(--p-font);
+	font-size: 35px;
+	line-height: 53px;
+
+	color: #313131;
+}
+.service__box {
+	width: 360px;
+	height: 280px;
+	font-family: var(--p-font);
+	border: 1px solid #ededed;
+	box-sizing: border-box;
+	border-radius: 5px;
+	margin: .5rem;
+	transition: all .5s;
+
+}
+.service__wrapper {
+	padding: 1rem;
+}
+.service__box .titles {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+	font-weight:500;
+}
+.titles span {
+	width: 231px;
+	height: 33px;
+	font-size: 18px;
+	color: #313131;
+}
+.service__box p {
+	width: 324px;
+	height: 135px;
+	font-size: 17px;
+	line-height: 150.9%;
+	/* or 27px */
+	color: #514040;
+	text-align: justify;
+	margin-bottom: 1rem;
+}
+.service__box .read_more {
+	display: flex;
+}
+.read_more a {
+	font-family: var(--p-font);
+	font-size: 16px;
+	line-height: 147.9%;
+	/* identical to box height, or 24px */
+	text-decoration-line: underline;
+	color: #514040;
+}
+.read_more a:hover{
+	color: #49ad09;
+}
+.sBtn{
+	font-family: var(--p-font);
+}
+
+.service__box:hover{
+box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1);
+border-radius: 5px;
+}
+
+
+.vec-parent{
+	position: relative;
+}
+.vector2{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/* resposive  */
+@media screen and (max-width: 968px) {
+	.service__box {
+		margin: 0.5rem;
+	}
+	.section__padding {
+		padding: 
+		2rem !important;
+	}
+	.service{
+		width: auto;
+	}
+}
+@media screen and (max-width: 500px){
+	.render{
+		flex-direction: column;
+	}
+	.sBtn{
+		width: 120px;
+		height: 40px;
+	}
+	.service__box{
+		width:unset;
+		height: unset;
+
+	}
+	.service__box p{
+		width: unset;
+		font-size: 16px;
+	}
+	.section__padding {
+		padding: .5rem !important;
+	}
+	.vector2{
+		display: none;
+	}
+}
